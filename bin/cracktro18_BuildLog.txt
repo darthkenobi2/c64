@@ -1,0 +1,24 @@
+Output dir: C:\Git\Others\DarkKenobi\bin
+parsing
+flex pass 1
+flex pass 2
+flex pass 3
+Output pass
+Writing prg file: C:\Git\Others\DarkKenobi\bin\cracktro18.prg
+
+Memory Map
+----------
+Default-segment:
+  $0801-$080c Basic
+  $080e-$13fb Basic End
+  $4000-$41df LOGO
+  $4c00-$4fe7 Unnamed
+  $5000-$56bf sprites
+  $5c00-$5fe7 bitmap colour
+  $6000-$7f3f bitmap
+  $b000-$afff main program
+  $c000-$cf81 Music
+  $d800-$d91d Charset Attrib
+
+Writing Vice symbol file: C:\Git\Others\DarkKenobi\bin\cracktro18.vs
+Writing Symbol file: cracktro18.sym
