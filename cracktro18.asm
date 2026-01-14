@@ -64,12 +64,17 @@ start:
 	lda $40e1,x
 	sta $44e1,x
 
+	// Hrm... We want to copy $206 bytes so the below 
+	// leaves six chars in the middle. My bad!
 	lda $4de1,x
 	sta $4de1-$800,x 
+	lda $4ee1,x 
+	sta $4ee1-$800,x 
 	lda $4ee7,x 
 	sta $4ee7-$800,x 
 	inx
 	bne !- 
+
 
 
 /*
@@ -176,7 +181,6 @@ ldx #0
 	sta $23 //screen_one flag
 	lda #$07
 	sta $24 //store d016 scroll value
-
 
 	// init irq
 	lda #<irq
